@@ -10,6 +10,7 @@ Loggin test
     log  jaahans test1
     open browser  about:blank  gc
     go to  http://www.yle.fi
+    close browser
 
 Python keyword call
     ${result}=  join two string  hello  world
