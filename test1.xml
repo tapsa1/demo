@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160808 12:58:39.639" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="C:\development\robot-scripts\demo\test1.robot" id="s1" name="Test1">
+<test id="s1-t1" name="Loggin test">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>jaahans test1</arg>
+</arguments>
+<msg timestamp="20160808 12:58:39.725" level="INFO">jaahans test1</msg>
+<status status="PASS" endtime="20160808 12:58:39.725" starttime="20160808 12:58:39.724"></status>
+</kw>
+<status status="PASS" endtime="20160808 12:58:39.726" critical="yes" starttime="20160808 12:58:39.723"></status>
+</test>
+<status status="PASS" endtime="20160808 12:58:39.730" starttime="20160808 12:58:39.647"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test1" pass="1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20160808 12:58:39.712" level="ERROR">Error in file 'C:\development\robot-scripts\demo\test1.robot': Importing test library 'Selenium2library' failed: ImportError: No module named Selenium2library
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\python27\lib\site-packages\robotframework_databaselibrary-0.8.1-py2.7.egg
+  C:\Windows\SYSTEM32\python27.zip
+  c:\python27\DLLs
+  c:\python27\lib
+  c:\python27\lib\plat-win
+  c:\python27\lib\lib-tk
+  c:\python27
+  c:\python27\lib\site-packages
+  c:\python27\lib\site-packages\wx-2.8-msw-unicode</msg>
+</errors>
+</robot>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160810 21:41:40.631" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="C:\development\robot-scripts\demo\test1.robot" id="s1" name="Test1">
+<test id="s1-t1" name="Loggin test">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>jaahans test1</arg>
+</arguments>
+<msg timestamp="20160810 21:41:41.008" level="INFO">jaahans test1</msg>
+<status status="PASS" endtime="20160810 21:41:41.008" starttime="20160810 21:41:41.007"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20160810 21:41:41.009" level="INFO">Opening browser 'gc' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20160810 21:41:45.797" starttime="20160810 21:41:41.009"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://www.yle.fi</arg>
+</arguments>
+<msg timestamp="20160810 21:41:45.803" level="INFO">Opening url 'http://www.yle.fi'</msg>
+<status status="PASS" endtime="20160810 21:41:51.545" starttime="20160810 21:41:45.803"></status>
+</kw>
+<status status="PASS" endtime="20160810 21:41:51.560" critical="yes" starttime="20160810 21:41:41.005"></status>
+</test>
+<test id="s1-t2" name="Python keyword call">
+<kw name="Join Two String" library="MyLibrary">
+<arguments>
+<arg>hello</arg>
+<arg>world</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20160810 21:41:51.639" level="INFO">${result} = hello world</msg>
+<status status="PASS" endtime="20160810 21:41:51.639" starttime="20160810 21:41:51.638"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>hello world</arg>
+<arg>mismatch in strings</arg>
+</arguments>
+<status status="PASS" endtime="20160810 21:41:51.641" starttime="20160810 21:41:51.640"></status>
+</kw>
+<kw name="Combine two strings">
+<arguments>
+<arg>hjellou</arg>
+<arg>worldi</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Join Two String" library="MyLibrary">
+<arguments>
+<arg>${arg1}</arg>
+<arg>${arg2}</arg>
+</arguments>
+<assign>
+<var>${combined}</var>
+</assign>
+<msg timestamp="20160810 21:41:51.645" level="INFO">${combined} = hjellou worldi</msg>
+<status status="PASS" endtime="20160810 21:41:51.645" starttime="20160810 21:41:51.644"></status>
+</kw>
+<msg timestamp="20160810 21:41:51.646" level="INFO">${output} = hjellou worldi</msg>
+<status status="PASS" endtime="20160810 21:41:51.646" starttime="20160810 21:41:51.642"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output</arg>
+</arguments>
+<msg timestamp="20160810 21:41:51.648" level="INFO">${output</msg>
+<status status="PASS" endtime="20160810 21:41:51.648" starttime="20160810 21:41:51.647"></status>
+</kw>
+<status status="PASS" endtime="20160810 21:41:51.649" critical="yes" starttime="20160810 21:41:51.635"></status>
+</test>
+<status status="PASS" endtime="20160810 21:41:51.656" starttime="20160810 21:41:40.639"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test1" pass="2">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
